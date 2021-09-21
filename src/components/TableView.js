@@ -13,6 +13,8 @@ export default function TableView() {
     { title: "Quantity", field: 'quantity' },
     { title: "Available Pkgs", field: "availablePkgs" },
     { title: "Price", field: 'price'},
+    { title: "Manufactoring Date", field: 'manufactoringDate'},
+    { title: "validityPeriod", field: 'validityPeriod'},
   ];
 
   useEffect(() => {
@@ -58,6 +60,7 @@ export default function TableView() {
 
 
       <MaterialTable
+      style= {{width : '1000px'}}
         title="Preskale Store"
         data={data}
         columns={columns}
